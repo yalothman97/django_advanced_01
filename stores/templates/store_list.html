@@ -16,7 +16,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">The eMall <span>by Coded</span></a></div>
+				<div class="logo"><a href="">The eMall <span>by Coded</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
@@ -44,7 +44,7 @@
 					<img src="{% static 'images/selfie.jpg' %}" alt="" />
 					<div class="inner">
 						<header>
-							<p>Skincare, fashion, and <b>more</b></p>
+							<p>Skin Care, fashion, and <b>more</b></p>
 							<h2>Keep #fresh</h2>
 						</header>
 					</div>
@@ -53,7 +53,7 @@
 					<img src="{% static 'images/laptop.png' %}"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Free shipping and free returns</p>
+							<p>Free shipping and free returns*</p>
 							<h2>Keep #calm</h2>
 						</header>
 					</div>
@@ -76,7 +76,7 @@
 									</header>
 									<p align="center"> {{store.description}}</p>
 									<footer class="align-center">
-										<a href="#" class="button alt">View Products</a>
+										<a href="{% url 'inventories:list' %}" class="button alt">View Products</a>
 									</footer>
 								</div>
 							</div>
