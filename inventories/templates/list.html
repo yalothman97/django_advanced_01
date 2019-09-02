@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}List{% endblock title %}
+
+{% block content %}
+<br>
+
+<div class="row">
+    {% for inventory in inventorys %}
+    <div class="col-md-4">
+        <div class="card my-card">
+          <div class="card-body">
+            <h5 class="card-title">{{inventory.name}}</h5>
+            <p class="card-text">{{inventory.store}}</p>
+            <p class="card-text">{{inventory.is_empty}}</p>
+            <p class="card-text">{{inventory.last_updated}}</p>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+
+
+{#           {% if not inventory.is_empty == True %}
+            
+          {% endif %} #}
